@@ -1,0 +1,18 @@
+[package]
+name = "fio-registry"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "FIO Protocol registry (handles, domains, public-address mapping) on Soroban"
+license = "MIT"
+repository = "https://github.com/fioprotocol/fio.registry.soroban"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
